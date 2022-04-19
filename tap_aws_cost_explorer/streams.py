@@ -11,6 +11,7 @@ class CostAndUsageWithResourcesStream(AWSCostExplorerStream):
     """Define custom stream."""
     name = "cost"
     primary_keys = []
+    key_properties = ["metric_name", "time_period_start"]
     replication_key = None
     # Optionally, you may also use `schema_filepath` in place of `schema`:
     # schema_filepath = SCHEMAS_DIR / "users.json"
