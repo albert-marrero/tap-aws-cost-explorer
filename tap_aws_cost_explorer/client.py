@@ -14,4 +14,5 @@ class AWSCostExplorerStream(Stream):
             'ce',
             aws_access_key_id=self.config.get("access_key"),
             aws_secret_access_key=self.config.get("secret_key"),
+            aws_session_token=self.config.get("session_token")
         )
