@@ -36,6 +36,7 @@ After you created the desired IAM user account, you need [access keys](https://d
 {
     "access_key": "ACCESS_KEY",
     "secret_key": "SECRET_ACCESS_KEY",
+    "session_token": "SESSION_TOKEN",
     "start_date": "2020-10-01",
     "end_date": "2021-09-01",
     "granularity": "DAILY",
@@ -45,8 +46,9 @@ After you created the desired IAM user account, you need [access keys](https://d
 A bit of a run down on each of the properties:
 - **access_key**: Your AWS Account Access Key.
 - **secret_key**: Your AWS Account Secret Key.
-- **start_date**: The start date for retrieving Amazon Web Services cost.
-- **end_date**: The end date for retrieving Amazon Web Services cost.
+- **session_token** (Optional): Your AWS Account Secret Key.
+- **start_date**: The start date for retrieving Amazon Web Services cost. Can only be a maximum of 12 months previously.
+- **end_date** (Optional): The end date for retrieving Amazon Web Services cost, defaults to yesterday.
 - **granularity**: Sets the Amazon Web Services cost granularity to MONTHLY or DAILY , or HOURLY.
 - **metrics**: Which metrics are returned in the query. Valid values are AmortizedCost, BlendedCost, NetAmortizedCost, NetUnblendedCost, NormalizedUsageAmount, UnblendedCost, and UsageQuantity."
 
