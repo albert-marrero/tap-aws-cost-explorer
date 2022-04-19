@@ -36,7 +36,7 @@ After you created the desired IAM user account, you need [access keys](https://d
 {
     "access_key": "ACCESS_KEY",
     "secret_key": "SECRET_ACCESS_KEY",
-    "start_date": "2020-10-01",
+    "start_date": "2020-10-01", # Can only be a maximum of 12 months previously
     "end_date": "2021-09-01",
     "granularity": "DAILY",
     "metrics": ["AmortizedCost", "BlendedCost", "NetAmortizedCost", "NetUnblendedCost", "NormalizedUsageAmount", "UnblendedCost", "UsageQuantity"]
