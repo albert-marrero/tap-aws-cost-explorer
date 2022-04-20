@@ -10,8 +10,7 @@ from tap_aws_cost_explorer.client import AWSCostExplorerStream
 class CostAndUsageWithResourcesStream(AWSCostExplorerStream):
     """Define custom stream."""
     name = "cost"
-    primary_keys = []
-    key_properties = ["metric_name", "time_period_start"]
+    primary_keys = ["metric_name", "time_period_start"]
     replication_key = None
     # Optionally, you may also use `schema_filepath` in place of `schema`:
     # schema_filepath = SCHEMAS_DIR / "users.json"
